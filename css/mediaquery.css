@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@media (min-width: 768px) {
+    section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .div-card {
+        margin: 20px 50px;
+    }
+}
