@@ -21,8 +21,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-h2 {
-    font-weight: bolder;
+#idade{
+    font-weight: bold;
+}
+
+div {
+    display: flex;
+    align-items: center;
+}
+
+div input {
+    height: 15px;
+    margin-left: 10px;
 }

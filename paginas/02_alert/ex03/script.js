@@ -1,8 +1,9 @@
-let grausCelcius = window.prompt('Quantos graus está fazendo?')
+idade = window.prompt('Qual a sua idade?')
 
-if (isNaN(grausCelcius)) {
-    window.alert('Por favor, insira um número válido!')
+if (idade < 18) {
+    alert('Acesso Não Permitido!')
+} else if (isNaN(idade)){
+    alert('Insira um dado válido')
 } else {
-    let grausConvertidos = `O valor de ${grausCelcius}º graus celcius convertidos para Fahrenheit é ${grausCelcius * 1.8 + 32}!`
-    document.getElementById('fahrenheit').innerHTML = grausConvertidos
+    alert ('Acesso permitido!')
 }
