@@ -1,5 +1,11 @@
-let nQuebrado = prompt('Insira um número quebrado!')
+let idade = parseInt(prompt('Qual a sua idade?'))
 
-nRedondo =  Math.round(parseFloat(nQuebrado))
-
-alert(`O número arredondado é igual a ${nRedondo}!`)
+if (idade < 12) {
+    document.querySelector('#resposta').innerHTML = 'Criança!'
+} else if (idade > 12 && idade < 17) {
+    document.querySelector('#resposta').innerHTML = 'Adolescente!'
+} else if ( idade >= 18 && idade <= 64) {
+    document.querySelector('#resposta').innerHTML = 'Adulto!'
+} else {
+    document.querySelector('#resposta').innerHTML = 'Idoso' 
+}

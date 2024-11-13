@@ -1,6 +1,13 @@
 function clicar() {
-    let numeroInserido = parseFloat(document.getElementById('numeroInserido').value)
-    let raizQ = Math.sqrt(numeroInserido)
+    let preco = parseFloat(document.getElementById('preco').value)
 
-    document.getElementById('resposta').innerHTML = `O valor da raiz quadrada de ${numeroInserido} é ${raizQ}`
+    if(preco >= 100) {
+        preco = preco - (preco * 20/100)
+        document.getElementById('resposta').innerHTML = `O valor com desconto é igual a: R$${preco}`
+    } else if (preco >=50 && preco <=100 ) {
+        preco = preco - (preco * 10/100)
+        document.getElementById('resposta').innerHTML = `O vlaor com desconto é igual a R$${preco}`
+    } else {
+        document.getElementById('resposta').innerHTML = `Sem desconto para o valor de R$${preco}!`
+    }
 }

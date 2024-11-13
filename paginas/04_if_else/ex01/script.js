@@ -1,20 +1,13 @@
-let numeroUsuario = parseInt(prompt('Digite um número entre 1 a 10'))
-let randomNumber =  Math.floor(Math.random() * 10) + 1;
+let nota = parseInt(prompt('Insira sua nota de 0 a 100'))
 
-/* if (numeroUsuario >= 1 && numeroUsuario <=10 && numeroUsuario === ran10domNumber) {
-    document.getElementById('resposta').innerHTML = `Você acertou, o número ${numeroUsuario} é o correto!`
-} else if (numeroUsuario < 1 && numeroUsuario >10){
-    window.alert('Insira um número entre 1 á 10!')
-} else {
-    document.getElementById('resposta').innerHTML = `Que pena! O número seleiconado foi ${randomNumber}.`
-} */
-
-if (numeroUsuario >= 1 && numeroUsuario <=10) {
-    if (numeroUsuario === randomNumber) {
-        document.getElementById('resposta').innerHTML = `Você acertou, o número ${numeroUsuario} é o correto!`
+if (nota >= 0 && nota <= 100) {
+    if (nota >= 60){
+        document.getElementById('resposta').innerHTML = 'Aprovado!'
+    } else if (nota >= 40 && nota <= 59) {
+        document.getElementById('resposta').innerHTML = 'Recuperação!'
     } else {
-         document.getElementById('resposta').innerHTML = `Que pena! O número seleiconado foi ${randomNumber}.`
+        document.getElementById('resposta').innerHTML = 'Reprovado!'
     }
-}   else {
-    window.alert ('Insira um número entre 1 e 10!')
+} else  {
+    alert('Insira um número válido!')
 }
