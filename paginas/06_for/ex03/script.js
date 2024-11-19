@@ -1,11 +1,5 @@
-let idade = parseInt(prompt('Qual a sua idade?'))
+let frutas = ['banana', 'manga', 'uva', 'morango', 'melancia'];
 
-if (idade < 12) {
-    document.querySelector('#resposta').innerHTML = 'Criança!'
-} else if (idade > 12 && idade < 17) {
-    document.querySelector('#resposta').innerHTML = 'Adolescente!'
-} else if ( idade >= 18 && idade <= 64) {
-    document.querySelector('#resposta').innerHTML = 'Adulto!'
-} else {
-    document.querySelector('#resposta').innerHTML = 'Idoso' 
+for(let contador = 0; contador < frutas.length; contador++) {
+    document.getElementById('resposta').innerHTML += `${frutas[contador]} <br>`
 }
